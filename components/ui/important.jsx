@@ -1,10 +1,7 @@
-import React from "react"
 
-const Important = (text: string, background: string, percentage: string) => {
+const Important = ({text,background, percentage, size}) => {
     return (
-        <div>
-            
-        </div>
+        <span className={`text-[${size}] absolute -top-2 -right-1 px-1 text-white bg-[${background}] rounded-[${percentage}]`}>{text}</span>
     )
 }
 
