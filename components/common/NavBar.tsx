@@ -108,9 +108,9 @@ const NavBar = () => {
                     <Image src={Like} width={23.82} height={20.59} alt="" />
                     <Important
                         text={0}
-                        background={"red"}
-                        percentage={"100%"}
-                        size={"0.6pc"}
+                        background={'red'}
+                        percentage={"full"}
+                        size={'sm'}
                     ></Important>
                 </div>
                 <div className="relative">
@@ -118,8 +118,8 @@ const NavBar = () => {
                     <Important
                         text={0}
                         background={"red"}
-                        percentage={"100%"}
-                        size={"0.6pc"}
+                        percentage={"full"}
+                        size={"sm"}
                     ></Important>
                 </div>
             </section>

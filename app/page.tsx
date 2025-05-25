@@ -1,6 +1,7 @@
 import HeroSection from '@/components/common/HeroSection';
-import NavBar from '@/components/common/NavBar'
-import TopCategories from "@/components/common/TopCategories"
+import NavBar from '@/components/common/NavBar';
+import NewProducts from "@/components/common/NewProducts";
+import TopCategories from "@/components/common/TopCategories";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <TopCategories />
+      <NewProducts />
     </>
   );
 }
