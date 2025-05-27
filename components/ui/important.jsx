@@ -24,9 +24,16 @@ const textMap = {
     c: 'text-[#0891B2]'
 }
 
-const Important = ({ text, background = 'red', percentage = 'md', size = 'md' }) => {
+const positionMap = {
+    0:'-top-2 -right-1 px-1',
+    1: 'top-2 left-2 p-1.5',
+    2: 'top-1/2 left-2 p-1.5'
+}
+
+
+const Important = ({ text, background = 'red', percentage = 'md', size = 'md', position = 0 }) => {
     return (
-        <span className={`absolute -top-2 -right-1 px-1  ${sizeMap[size]} ${bgMap[background]} ${radiusMap[percentage]} ${background != 'red' ? textMap[background]: 'text-white' }`}>
+        <span className={`absolute ${positionMap[position]} font-bold  ${sizeMap[size]} ${bgMap[background]} ${radiusMap[percentage]} ${background != 'red' ? textMap[background]: 'text-white' }`}>
             {text}
         </span>
     );
